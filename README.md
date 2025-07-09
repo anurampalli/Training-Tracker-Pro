@@ -25,7 +25,7 @@
 
 ## 📊 Data Model
 
-### 🟢 `Training Session [x_ttpro_training_session]`
+### 🟢 `Training Session [x_1778869_ttp_training_session]`
 Custom table to define training sessions.
 
 | Field | Type | Description |
@@ -40,7 +40,7 @@ Custom table to define training sessions.
 
 ---
 
-### 🟢 `Training Record [x_ttpro_training_record]`
+### 🟢 `Training Record [x_1778869_ttp_training_record]`
 Tracks participation of employees in sessions.
 
 | Field | Type | Description |
@@ -105,6 +105,9 @@ A dashboard titled **"Training Tracker Dashboard"** includes:
 
 - Creating a scoped application in ServiceNow
 - Defining and referencing custom tables
+- Creating email layout and template
+- Creating email notification
+- Enabling email sending in ServiceNow
 - Configuring Flow Designer for emails
 - Designing reports and dashboards
 - Using GitHub with ServiceNow Studio
