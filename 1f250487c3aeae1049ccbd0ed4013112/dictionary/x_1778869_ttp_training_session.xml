@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e75788cbc3aeae1049ccbd0ed4013126" label="Training Session" max_length="40" name="x_1778869_ttp_training_session" type="collection">
+        <element display="true" label="Session Name" mandatory="true" max_length="255" name="session_name" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="15" value="cancelled"/>
+                <element inactive_on_update="false" label="Scheduled" sequence="5" value="scheduled"/>
+                <element inactive_on_update="false" label="Completed" sequence="10" value="completed"/>
+            </choice>
+        </element>
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Description" max_length="8000" name="description" type="html"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Session ID" max_length="40" name="number" type="string"/>
+        <element label="Trainer" max_length="32" name="trainer" reference="sys_user" type="reference"/>
+        <element label="Scheduled Date" max_length="40" name="scheduled_date" type="glide_date_time"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="trainer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f4b3a247c3aaee1049ccbd0ed40131e3" label="Training Record" max_length="40" name="x_1778869_ttp_training_record" type="collection">
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Training Session" max_length="32" name="training_session" reference="x_1778869_ttp_training_session" type="reference"/>
+        <element label="Feedback" max_length="255" name="feedback" type="string"/>
+        <element label="Completion Date" max_length="40" name="completion_date" type="glide_date"/>
+        <element label="Score" max_length="40" name="score" type="integer"/>
+        <element choice="3" label="Attendance Status" max_length="40" name="attendance_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="0" value="Scheduled"/>
+                <element inactive_on_update="false" label="Absent" sequence="10" value="absent"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="0" value="Cancelled"/>
+                <element inactive_on_update="false" label="Excused" sequence="15" value="excused"/>
+                <element inactive_on_update="false" label="Attended" sequence="5" value="attended"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+        <index name="index2">
+            <element name="training_session"/>
+        </index>
+    </element>
+</database>

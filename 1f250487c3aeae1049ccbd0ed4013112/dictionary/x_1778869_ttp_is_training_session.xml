@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0d104303c36eee1049ccbd0ed40131fc" extends="sys_import_set_row" label="IS Training Session" max_length="40" name="x_1778869_ttp_is_training_session" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Trainer (Name)" label="Trainer (Name)" max_length="40" name="u_trainer__name_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Session Name" label="Session Name" max_length="40" name="u_session_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Session Description" label="Session Description" max_length="40" name="u_session_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Department" label="Department" max_length="40" name="u_department" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Scheduled Date" label="Scheduled Date" max_length="40" name="u_scheduled_date" type="glide_date_time"/>
+    </element>
+</database>

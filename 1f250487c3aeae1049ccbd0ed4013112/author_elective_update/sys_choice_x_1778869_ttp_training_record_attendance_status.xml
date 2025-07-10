@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="attendance_status" table="x_1778869_ttp_training_record" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>attendance_status</element>
+            <name>x_1778869_ttp_training_record</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-09 23:16:45</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>attendance_status</sys_name>
+            <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+            <sys_update_name>sys_choice_x_1778869_ttp_training_record_attendance_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-09 23:16:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendance_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_1778869_ttp_training_record</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:18:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:18:00</sys_updated_on>
+            <value>Cancelled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendance_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Scheduled</label>
+            <language>en</language>
+            <name>x_1778869_ttp_training_record</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:18:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:18:00</sys_updated_on>
+            <value>Scheduled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendance_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Attended</label>
+            <language>en</language>
+            <name>x_1778869_ttp_training_record</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-09 23:16:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-09 23:16:58</sys_updated_on>
+            <value>attended</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendance_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Absent</label>
+            <language>en</language>
+            <name>x_1778869_ttp_training_record</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-09 23:17:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-09 23:17:39</sys_updated_on>
+            <value>absent</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>attendance_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excused</label>
+            <language>en</language>
+            <name>x_1778869_ttp_training_record</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-09 23:17:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-09 23:17:50</sys_updated_on>
+            <value>excused</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

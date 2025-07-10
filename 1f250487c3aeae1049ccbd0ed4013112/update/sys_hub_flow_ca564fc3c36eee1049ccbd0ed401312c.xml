@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=6194000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When a Training Session is scheduled, an email is sent to all employees in that department with session details.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>notify_department_when_training_session_scheduled</internal_name>
+        <label_cache>[{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.manager.email","label":"2 - For Each➛User Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["ah_cc"]}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.email","label":"2 - For Each➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["ah_to"]}},{"name":"Created or Updated_1.current.department","label":"Trigger - Record Created or Updated➛Training Session Record➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"x_1778869_ttp_training_session","column_name":"department","usedInstances":{"7bc50b8b-d82b-446b-bc7e-b422c45f11cf":["conditions"]}},{"name":"Created_1.current.department","label":"Trigger - Record Created➛Training Session Record➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"x_1778869_ttp_training_session","column_name":"department","usedInstances":{"5d9627ef-6aca-497c-8a0b-a5f5117882bb":["conditions"],"cb37bb4d-ade9-4f91-a8c6-c1d3f9596cf9":["conditions"],"81bac970-34fd-44e5-8d6a-f832955919cf":["conditions"]}},{"name":"flow_variable.users_an_a_department","label":"Flow Variables➛Users an a Department","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b5374506-3b1c-4d7b-ba3d-31c1b0df1eb4"}},{"name":"81bac970-34fd-44e5-8d6a-f832955919cf.Records","label":"1 - Look Up Records➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","usedInstances":{"771a03f4-3f23-4423-bf02-57ea210c0f50":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Training Session Record","reference":"x_1778869_ttp_training_session","reference_display":"Training Session","type":"reference","base_type":"reference","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["record"]},"attributes":{}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item","label":"2 - For Each➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.manager","label":"2 - For Each➛User Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{}},{"name":"Created_1.current.session_name","label":"Trigger - Record Created➛Training Session Record➛Session Name","reference":"","reference_display":"Session Name","type":"string","base_type":"string","parent_table_name":"x_1778869_ttp_training_session","column_name":"session_name","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["ah_subject",null]}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.first_name","label":"2 - For Each➛User Record➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}},{"name":"Created_1.current.trainer.first_name","label":"Trigger - Record Created➛Training Session Record➛Trainer➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}},{"name":"Created_1.current.scheduled_date","label":"Trigger - Record Created➛Training Session Record➛Scheduled Date","reference":"","reference_display":"Scheduled Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1778869_ttp_training_session","column_name":"scheduled_date","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Training Session Record➛Description","reference":"","reference_display":"Description","type":"html","base_type":"html","parent_table_name":"x_1778869_ttp_training_session","column_name":"description","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}}]</label_cache>
+        <master_snapshot>f523130bc3aeee1049ccbd0ed4013174</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Notify Department When Training Session Scheduled</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>8623130bc3aeee1049ccbd0ed40131c3</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:35:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ca564fc3c36eee1049ccbd0ed401312c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Notify Department When Training Session Scheduled</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name>sys_hub_flow_ca564fc3c36eee1049ccbd0ed401312c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:35</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1778869_ttp_training_session">status=scheduled<item display_value="Scheduled" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="scheduled"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8623130bc3aeee1049ccbd0ed40131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <table>x_1778869_ttp_training_session</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>ca564fc3c36eee1049ccbd0ed401312c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 03:18:35</sys_created_on>
+        <sys_id>f2fd5b47c3eeee1049ccbd0ed40131fc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:35</sys_updated_on>
+        <trigger display_value="">8623130bc3aeee1049ccbd0ed40131c3</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT INf2fd5b47c3eeee1049ccbd0ed40131fc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT IN42564fc3c36eee1049ccbd0ed401312f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ca564fc3c36eee1049ccbd0ed401312c</id>
+        <name>Notify Department When Training Session Scheduled</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:35:19</sys_created_on>
+        <sys_id>42564fc3c36eee1049ccbd0ed401312f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 01:35:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=42564fc3c36eee1049ccbd0ed401312f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT IN83e74f0bc36eee1049ccbd0ed40131b5,8be74f0bc36eee1049ccbd0ed40131ad"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</model>
+        <model_id>ca564fc3c36eee1049ccbd0ed401312c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ca564fc3c36eee1049ccbd0ed401312c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:42:12</sys_created_on>
+        <sys_id>83e74f0bc36eee1049ccbd0ed40131b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 01:42:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=83e74f0bc36eee1049ccbd0ed40131b5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</model>
+        <model_id>ca564fc3c36eee1049ccbd0ed401312c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ca564fc3c36eee1049ccbd0ed401312c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:42:12</sys_created_on>
+        <sys_id>8be74f0bc36eee1049ccbd0ed40131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 01:42:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8be74f0bc36eee1049ccbd0ed40131ad"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT INd0bb4f8fc36eee1049ccbd0ed40131d0"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:58:40</sys_created_on>
+        <sys_id>d0bb4f8fc36eee1049ccbd0ed40131d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:18:55</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZ227jNhD9FUFPLZACuviat22SRQNsN4DjbR/SQKBE0iZKU65IKXEX+fcOdbOsi2PHytZ5CSCS4hwenTkzdB6+mxz5hJuX5hz5nJgXJhOKRALx+WZNYFjpYU+glZ5bIYGRCqONeamimFyYNApXc7Jac6RgMUVcwmAYYRKZl/aFmSAek/uNvMWwE7yfbpPvaebT8Pzs2ePxZDKaekqtPRUhJphYeJJIyUIBCzGTEGLzR75+nq8w7ssVwZJxHBFhXj48XphrFEEkpVF8r00xDSWgAZo6xApc23Ucy3ImA9sfub7tYBcRy4IN67TUoKsWdrbnJs+KCExwSUmDuIggfCf4plyxBN4zklboWbJ/YfeJpddRAtgDks2Vj15OSTYcLEMWkLu10mSkIxnObDLk8Up8zfBrMglFMVcFmTASS9iPrDVkDSJHRO+X4dOsCPiZifR0+SQPA8TLJ6RUxPxYEakJp4wD9V7GjQzjKEU/u7m6m117f36aX/12M/NmN/fz2e3V/ObafEnP5f0T6x0zhDkWLzvOS6mAz4xw/QFzaRTMyyBia/UpUCwpZPhysZX2VSgwU5lQavIOiim5K++Cg336tqxOhQeViIXKpUIqln/FluViGSwJjjko5FjpjkYIYYI6pOvTinSrx27BpVoYqB5tn4jzkUNUPLCs/0nHuUW9VcarEBN+vd3OhMnFAoTNxDpWmq0nJJT0VOghjL0Kj3opYHpN19nZmuJ+XdBRLGALr/xCTVmnRJaMfmESDvAAqVmwlW4J8/RLvuUsFkYInxL+GEEcAVnKKMyO3q7QIueY3hNOAlWRBf0mq0+/M0hNsaigLoOmrDRiluFAXkZxpCy2PDH4Y5853SQ9qZFZK1NH57ZtU+oT6lhjndm25frUtsbWEFHsWlbgVHK7CaYTpapJ4l1y/LgMl6kY+QHSq1Ocg7eq2XCQjJJdDRYkaInkRnLVDzS7J2iOhlYzRPcoRyxlmQ1f76pz39F6bggQThC8gQ81Rr3gAAekPHwCM36D+/ko+HsRhbHAdTvSexpMGNsVxk85fz/36IQ0jMh+ALsrzskDt7QXwkVi04P7udT2p2RALDA9F/zOH06nfoAcSsejMXHsmvttYbRi+xCu94rakja5djlgq3CSNr0d4X0nAGz44NEAT3fAXJit/pfNfQyne1oS4QHUyOPayxqGt+AMk2Ku32xvhE62+X1qxtPJNBjC1T8Ywz0GMp4OiI/sgTNE0/HInQxrGd+Asg+mamHmh9xu5EamQDrc4Fs2dV439veUrSRK6XJ0fJUW0Mem76AsSKVS6s9ipKYSRsbXUPxyu11X+VWor3J9CAr9YY33heGHatnoFyD0rzC+E1r3mR2snN2VqiaSZPesJ1+pyGAynFK33WLotM1itmC6YZ59e3FghiSdudbWZxwq+KQ1bzobgzdIuCaTasewp6XpixS7d1Kc9yPFPbmNKnKx8x75FrAfqISlfcUpdUzHJF5Iq+Z9HRowYUAQg1Ej/22RYMPfGGpJgFIO/bL+J4eOfqprV6tIE0qp4B8LJOvAG9UMho28gTq/QlWTQr83YILHaDh0O/rhaf0G3AboFbxnX7aOzoqkLcn21q7j9q3v2Vq9KpLdVcSBdanXU7cXp9NO3VqeXjv16YVn3/29BcWZlpTH/wAFd5lUZh8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT IN22e01747c3aeee1049ccbd0ed40131aa,6123130bc3aeee1049ccbd0ed4013149"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:21:30</sys_created_on>
+        <sys_id>22e01747c3aeee1049ccbd0ed40131aa</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:22:58</sys_updated_on>
+        <ui_id>81bac970-34fd-44e5-8d6a-f832955919cf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXTU/jMBD9K1XOUZXQUlhuqyKklfiQgOXCguXYTmut62Rtp6VU/e87jp00agPbSkEC7dEz4/Gbmfcc53EVcBqcBafpMIpwfHx6EkWDQRSNRgOC4yQZjEgSJcMkCAOJZwwiDU4Eg+Uci8Ku9VKjQjMFJsp1LvDywXt+OiuZckEVk8HZ41MY5FhBHgOes9WWa18gAidMQOi9R7IFzCzzeolKn7NdNrf1rp0jU9RCicKAvRgmKQMMKRaahcEMS4pNppa1RTFMb6TYGKZcGsgY2OAXzV/h3NPIxqUMqiLM+eol8g1y5vQcG3xnVEFMoXwomWacMO36QVmKC2HGTZsLuMkNz6Tb4sp2uzNRzOS1a0dQJ6jmARYYFKIst4Va5L6M9G6aLW4rlBdclj3xTpERLOoVNkbxpDAWzypggs0gEZrhPOdygnKVzXm5GbDM+hMBi34qsgUcqvlE9jGxwPvQV9y/APt5aX7AitsqriBNSZmUC2AIciPUWaHKVs4REYUuHQpL7XIF69BScCyw1pvKoeXoT2Fxuz74ipFrmt1CFM/Nd0gxZ764dbiXFo6jDeVIJim3KHRDEHAaVsb25VcBCehqNQbiGEZR3CeFgh6b/iZmvX7GJQoXDHRgu0rqImWXMix7UMlw3GxCW2O8IHdsl20JvCDjzgQJdXwlSdppfTpFHq4x14J/CI2cvEuy4w2fdKYMcr1sKG1XKAfzfA8IFc9vLDN7yfItVJ7mKWeCtn13Lqxj67tz9H9+dz4lyQEQRW56XAouy0eEvTs/iP3R+1fsty2elfRqPLusDWuyqwHcM1nv9WAl7AGnUsIdnN27d3haIFb3fUmZ7bu+MnoBDDoTwOCoGwGs6jLrRrb0vHo32mlW8a82Hm/HAwUbG+J1m8AOOjM+9Myj9a6ABwcpuEk25zl/g3MdPzDfUGT4kVfAFLb685DTL1pwOmFmc3oVRTOzwOJ3m98zDlWDKsv7gMfq8F3ZjuKNREEpSDENw2u+VmN4Hu3eIXHozIddIXtgqdpxhV96tzWYVoT+GgGls0k5m+Y98qO2epIPO3wwftovaTWsVg1WM/sS/3jdCeHpL/1+akXDEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>771a03f4-3f23-4423-bf02-57ea210c0f50</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>6123130bc3aeee1049ccbd0ed4013149</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:22:58</sys_updated_on>
+        <ui_id>2f12b432-03f7-494b-b4b0-7deff327dc39</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT IN2123130bc3aeee1049ccbd0ed4013146"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6d23130bc3aeee1049ccbd0ed4013145</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>2123130bc3aeee1049ccbd0ed4013146</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:33</sys_updated_on>
+        <ui_id>771a03f4-3f23-4423-bf02-57ea210c0f50</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Tw48kG+dWYFGgh7ZAt+ilKAxaohNhZUkryUm9hv+9VOykRY892RySwxmRAzNdsF3wz+bGe7nXbPf6tmBSR4z+B6ahRbZjMmDr2YIdQXUxHoZtVgMvf6XLYtWI5WqF6+VWbGDZbIu8XK/LrORN8oTcOOHHkVqF9FZB//JzBn6QSjicRVpwpC2gY7vhWyr0FisFNSoaNDNQvxQUZqVoyiwteZFvijxN8+0qqzdFneWiABQbqrt03s2mv71BZKfQXXnpE1Xk6YLhe0AtkAY1oDwuWAtaQDCuZ7vgOgIcgnjUqr9WHKQORMdi7buX/4k7S9NY2CA54jglr2E1P+QE84ORHB9tkEZPSIBazT3cqK7VD5P8uAJsoFPhsgJCOk98aKPmqGKW1Pw5mNPTZeCt1Gd/c1IZDuoaQQhO1l1AH9eAClsiqlqwVup9ZZ05ynMzaWmTvaIgaZQ50dB4bgnwKDyhJ4LklvDfZ/gFnIwu7omGmsez++pfF+dOPmbF1WSaCjx30oYbojviLG58i/c6MfnpMARy6Wngc8TuLlceEz0tWfKv0Mm4v1HqJzZ+AFOYXPYvAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT IN3523130bc3aeee1049ccbd0ed4013157,7123130bc3aeee1049ccbd0ed4013157,7923130bc3aeee1049ccbd0ed4013156,b923130bc3aeee1049ccbd0ed4013157,f523130bc3aeee1049ccbd0ed4013157"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ca564fc3c36eee1049ccbd0ed401312c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.trainer.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>3523130bc3aeee1049ccbd0ed4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cf58223c-66de-4cb1-8be5-739920208f15</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ca564fc3c36eee1049ccbd0ed401312c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.session_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>7123130bc3aeee1049ccbd0ed4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a30b2704-d966-4874-8236-70cd21fef514</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ca564fc3c36eee1049ccbd0ed401312c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{771a03f4-3f23-4423-bf02-57ea210c0f50.item.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>7923130bc3aeee1049ccbd0ed4013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4464a337-f257-49d6-9448-7f9bd3f0fc18</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ca564fc3c36eee1049ccbd0ed401312c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>b923130bc3aeee1049ccbd0ed4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6186969-b1b6-425d-8e1a-e68b52bbdc98</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>ca564fc3c36eee1049ccbd0ed401312c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.scheduled_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>f523130bc3aeee1049ccbd0ed4013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6045de49-813a-48e8-b2f3-99e8eca01f7a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT INbc501b07c3aeee1049ccbd0ed40131d9"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a68b3162-db4f-4604-bae7-4aca19b65806</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>users_in_a_department</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Users in a Department</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</model>
+        <model_id>ca564fc3c36eee1049ccbd0ed401312c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_ca564fc3c36eee1049ccbd0ed401312c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:18:55</sys_created_on>
+        <sys_id>bc501b07c3aeee1049ccbd0ed40131d9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:18:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ca564fc3c36eee1049ccbd0ed401312c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:42:12</sys_created_on>
+        <sys_id>0be74f0bc36eee1049ccbd0ed40131b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 01:42:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ca564fc3c36eee1049ccbd0ed401312c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 01:42:12</sys_created_on>
+        <sys_id>cbe7838bc36eee1049ccbd0ed4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 01:42:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ca564fc3c36eee1049ccbd0ed401312c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>When a Training Session is scheduled, an email is sent to all employees in that department with session details.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>notify_department_when_training_session_scheduled</internal_name>
+        <label_cache>[{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.manager.email","label":"2 - For Each➛User Record➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["ah_cc"]}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.email","label":"2 - For Each➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["ah_to"]}},{"name":"Created or Updated_1.current.department","label":"Trigger - Record Created or Updated➛Training Session Record➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"x_1778869_ttp_training_session","column_name":"department","usedInstances":{"7bc50b8b-d82b-446b-bc7e-b422c45f11cf":["conditions"]}},{"name":"Created_1.current.department","label":"Trigger - Record Created➛Training Session Record➛Department","reference":"cmn_department","reference_display":"Department","type":"reference","base_type":"reference","parent_table_name":"x_1778869_ttp_training_session","column_name":"department","usedInstances":{"5d9627ef-6aca-497c-8a0b-a5f5117882bb":["conditions"],"cb37bb4d-ade9-4f91-a8c6-c1d3f9596cf9":["conditions"],"81bac970-34fd-44e5-8d6a-f832955919cf":["conditions"]}},{"name":"flow_variable.users_an_a_department","label":"Flow Variables➛Users an a Department","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b5374506-3b1c-4d7b-ba3d-31c1b0df1eb4"}},{"name":"81bac970-34fd-44e5-8d6a-f832955919cf.Records","label":"1 - Look Up Records➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","usedInstances":{"771a03f4-3f23-4423-bf02-57ea210c0f50":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Training Session Record","reference":"x_1778869_ttp_training_session","reference_display":"Training Session","type":"reference","base_type":"reference","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["record"]},"attributes":{}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item","label":"2 - For Each➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.manager","label":"2 - For Each➛User Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{}},{"name":"Created_1.current.session_name","label":"Trigger - Record Created➛Training Session Record➛Session Name","reference":"","reference_display":"Session Name","type":"string","base_type":"string","parent_table_name":"x_1778869_ttp_training_session","column_name":"session_name","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":["ah_subject",null]}},{"name":"771a03f4-3f23-4423-bf02-57ea210c0f50.item.first_name","label":"2 - For Each➛User Record➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}},{"name":"Created_1.current.trainer.first_name","label":"Trigger - Record Created➛Training Session Record➛Trainer➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}},{"name":"Created_1.current.scheduled_date","label":"Trigger - Record Created➛Training Session Record➛Scheduled Date","reference":"","reference_display":"Scheduled Date","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1778869_ttp_training_session","column_name":"scheduled_date","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Training Session Record➛Description","reference":"","reference_display":"Description","type":"html","base_type":"html","parent_table_name":"x_1778869_ttp_training_session","column_name":"description","usedInstances":{"2f12b432-03f7-494b-b4b0-7deff327dc39":[null]}}]</label_cache>
+        <master>true</master>
+        <name>Notify Department When Training Session Scheduled</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Notify Department When Training Session Scheduled">ca564fc3c36eee1049ccbd0ed401312c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f523130bc3aeee1049ccbd0ed4013174</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:34</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN7923130bc3aeee1049ccbd0ed4013175"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f523130bc3aeee1049ccbd0ed4013174</id>
+        <name>Notify Department When Training Session Scheduled</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>7923130bc3aeee1049ccbd0ed4013175</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7923130bc3aeee1049ccbd0ed4013175"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN7523130bc3aeee1049ccbd0ed4013182,b923130bc3aeee1049ccbd0ed4013176"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</model>
+        <model_id>f523130bc3aeee1049ccbd0ed4013174</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f523130bc3aeee1049ccbd0ed4013174</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>7523130bc3aeee1049ccbd0ed4013182</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7523130bc3aeee1049ccbd0ed4013182"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</model>
+        <model_id>f523130bc3aeee1049ccbd0ed4013174</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f523130bc3aeee1049ccbd0ed4013174</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>b923130bc3aeee1049ccbd0ed4013176</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b923130bc3aeee1049ccbd0ed4013176"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN8623130bc3aeee1049ccbd0ed40131b3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>8623130bc3aeee1049ccbd0ed40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZ227jNhD9FUFPLZACuviat22SRQNsN4DjbR/SQKBE0iZKU65IKXEX+fcOdbOsi2PHytZ5CSCS4hwenTkzdB6+mxz5hJuX5hz5nJgXJhOKRALx+WZNYFjpYU+glZ5bIYGRCqONeamimFyYNApXc7Jac6RgMUVcwmAYYRKZl/aFmSAek/uNvMWwE7yfbpPvaebT8Pzs2ePxZDKaekqtPRUhJphYeJJIyUIBCzGTEGLzR75+nq8w7ssVwZJxHBFhXj48XphrFEEkpVF8r00xDSWgAZo6xApc23Ucy3ImA9sfub7tYBcRy4IN67TUoKsWdrbnJs+KCExwSUmDuIggfCf4plyxBN4zklboWbJ/YfeJpddRAtgDks2Vj15OSTYcLEMWkLu10mSkIxnObDLk8Up8zfBrMglFMVcFmTASS9iPrDVkDSJHRO+X4dOsCPiZifR0+SQPA8TLJ6RUxPxYEakJp4wD9V7GjQzjKEU/u7m6m117f36aX/12M/NmN/fz2e3V/ObafEnP5f0T6x0zhDkWLzvOS6mAz4xw/QFzaRTMyyBia/UpUCwpZPhysZX2VSgwU5lQavIOiim5K++Cg336tqxOhQeViIXKpUIqln/FluViGSwJjjko5FjpjkYIYYI6pOvTinSrx27BpVoYqB5tn4jzkUNUPLCs/0nHuUW9VcarEBN+vd3OhMnFAoTNxDpWmq0nJJT0VOghjL0Kj3opYHpN19nZmuJ+XdBRLGALr/xCTVmnRJaMfmESDvAAqVmwlW4J8/RLvuUsFkYInxL+GEEcAVnKKMyO3q7QIueY3hNOAlWRBf0mq0+/M0hNsaigLoOmrDRiluFAXkZxpCy2PDH4Y5853SQ9qZFZK1NH57ZtU+oT6lhjndm25frUtsbWEFHsWlbgVHK7CaYTpapJ4l1y/LgMl6kY+QHSq1Ocg7eq2XCQjJJdDRYkaInkRnLVDzS7J2iOhlYzRPcoRyxlmQ1f76pz39F6bggQThC8gQ81Rr3gAAekPHwCM36D+/ko+HsRhbHAdTvSexpMGNsVxk85fz/36IQ0jMh+ALsrzskDt7QXwkVi04P7udT2p2RALDA9F/zOH06nfoAcSsejMXHsmvttYbRi+xCu94rakja5djlgq3CSNr0d4X0nAGz44NEAT3fAXJit/pfNfQyne1oS4QHUyOPayxqGt+AMk2Ku32xvhE62+X1qxtPJNBjC1T8Ywz0GMp4OiI/sgTNE0/HInQxrGd+Asg+mamHmh9xu5EamQDrc4Fs2dV439veUrSRK6XJ0fJUW0Mem76AsSKVS6s9ipKYSRsbXUPxyu11X+VWor3J9CAr9YY33heGHatnoFyD0rzC+E1r3mR2snN2VqiaSZPesJ1+pyGAynFK33WLotM1itmC6YZ59e3FghiSdudbWZxwq+KQ1bzobgzdIuCaTasewp6XpixS7d1Kc9yPFPbmNKnKx8x75FrAfqISlfcUpdUzHJF5Iq+Z9HRowYUAQg1Ej/22RYMPfGGpJgFIO/bL+J4eOfqprV6tIE0qp4B8LJOvAG9UMho28gTq/QlWTQr83YILHaDh0O/rhaf0G3AboFbxnX7aOzoqkLcn21q7j9q3v2Vq9KpLdVcSBdanXU7cXp9NO3VqeXjv16YVn3/29BcWZlpTH/wAFd5lUZh8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN0223130bc3aeee1049ccbd0ed40131b3,4623130bc3aeee1049ccbd0ed40131b0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>771a03f4-3f23-4423-bf02-57ea210c0f50</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>0223130bc3aeee1049ccbd0ed40131b3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:34</sys_updated_on>
+        <ui_id>2f12b432-03f7-494b-b4b0-7deff327dc39</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>4623130bc3aeee1049ccbd0ed40131b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <ui_id>81bac970-34fd-44e5-8d6a-f832955919cf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXTU/jMBD9K1XOUZXQUlhuqyKklfiQgOXCguXYTmut62Rtp6VU/e87jp00agPbSkEC7dEz4/Gbmfcc53EVcBqcBafpMIpwfHx6EkWDQRSNRgOC4yQZjEgSJcMkCAOJZwwiDU4Eg+Uci8Ku9VKjQjMFJsp1LvDywXt+OiuZckEVk8HZ41MY5FhBHgOes9WWa18gAidMQOi9R7IFzCzzeolKn7NdNrf1rp0jU9RCicKAvRgmKQMMKRaahcEMS4pNppa1RTFMb6TYGKZcGsgY2OAXzV/h3NPIxqUMqiLM+eol8g1y5vQcG3xnVEFMoXwomWacMO36QVmKC2HGTZsLuMkNz6Tb4sp2uzNRzOS1a0dQJ6jmARYYFKIst4Va5L6M9G6aLW4rlBdclj3xTpERLOoVNkbxpDAWzypggs0gEZrhPOdygnKVzXm5GbDM+hMBi34qsgUcqvlE9jGxwPvQV9y/APt5aX7AitsqriBNSZmUC2AIciPUWaHKVs4REYUuHQpL7XIF69BScCyw1pvKoeXoT2Fxuz74ipFrmt1CFM/Nd0gxZ764dbiXFo6jDeVIJim3KHRDEHAaVsb25VcBCehqNQbiGEZR3CeFgh6b/iZmvX7GJQoXDHRgu0rqImWXMix7UMlw3GxCW2O8IHdsl20JvCDjzgQJdXwlSdppfTpFHq4x14J/CI2cvEuy4w2fdKYMcr1sKG1XKAfzfA8IFc9vLDN7yfItVJ7mKWeCtn13Lqxj67tz9H9+dz4lyQEQRW56XAouy0eEvTs/iP3R+1fsty2elfRqPLusDWuyqwHcM1nv9WAl7AGnUsIdnN27d3haIFb3fUmZ7bu+MnoBDDoTwOCoGwGs6jLrRrb0vHo32mlW8a82Hm/HAwUbG+J1m8AOOjM+9Myj9a6ABwcpuEk25zl/g3MdPzDfUGT4kVfAFLb685DTL1pwOmFmc3oVRTOzwOJ3m98zDlWDKsv7gMfq8F3ZjuKNREEpSDENw2u+VmN4Hu3eIXHozIddIXtgqdpxhV96tzWYVoT+GgGls0k5m+Y98qO2epIPO3wwftovaTWsVg1WM/sS/3jdCeHpL/1+akXDEAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN0223130bc3aeee1049ccbd0ed40131af"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6d23130bc3aeee1049ccbd0ed4013145</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>0223130bc3aeee1049ccbd0ed40131af</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 03:18:34</sys_updated_on>
+        <ui_id>771a03f4-3f23-4423-bf02-57ea210c0f50</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TXW+jMBD8L34miI8kF/JWtapUqb1KadWXUxUt9pJYZ2zONkk5xH+/dSC06uM9wY53Z2cG0zPT+qb17tXcOCcPmm1/vUdM6oDRe8801Mi2THqsHYvYCVQb6r7fpCXw4keyyJeVWCyXuFpsxBoW1SbPitWqSAtexTvkxgo3DDQqpGsUdG//z8CPUgmLk8gGLGnzaNm2/3YkBS1IC1EVaVLwPFvnWZJkm2VarvMyzUQOKNZEqKBERa0Pk7tvZn3XhNKOEibgcZrZzSg9gogsiRh+eNQCaX0FymHEatACvLEd23rbEmARxLNW3dxxlNoTHQu9H07+pY1pkoTGCskQx/FwLvdTjiNc3YGHF6LmvrVTKz8aydGNUQisoFX+9is2Njw3Xho9jngo1XXaqLbWP8ck2Exw/WyEtI5EYBOMBumTj+rlaM67q8p7qS+hTIfKcFBzBd5bWbY+6OkZKqyJaF9D00h92DfWnORlmLTU8UFREVfKnGlpuKIx8CA8plwhvif87gK/gZXBxRPR0PAQMde5WwXOfXqhEPd/2qBkdDZ52I8xhBFuZeNvaMEJJ7nDe7j1I/ecKZeOJLwG7OH6r4SDjm6Q5F+hs7G/g/hPbPgH3j/r2HUDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN0223130bc3aeee1049ccbd0ed40131b4,0a23130bc3aeee1049ccbd0ed40131b3,0e23130bc3aeee1049ccbd0ed40131b3,8a23130bc3aeee1049ccbd0ed40131b3,8e23130bc3aeee1049ccbd0ed40131b3"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f523130bc3aeee1049ccbd0ed4013174</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.session_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>0223130bc3aeee1049ccbd0ed40131b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a30b2704-d966-4874-8236-70cd21fef514</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f523130bc3aeee1049ccbd0ed4013174</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>0a23130bc3aeee1049ccbd0ed40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b6186969-b1b6-425d-8e1a-e68b52bbdc98</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f523130bc3aeee1049ccbd0ed4013174</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.trainer.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>0e23130bc3aeee1049ccbd0ed40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>cf58223c-66de-4cb1-8be5-739920208f15</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f523130bc3aeee1049ccbd0ed4013174</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{771a03f4-3f23-4423-bf02-57ea210c0f50.item.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>8a23130bc3aeee1049ccbd0ed40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4464a337-f257-49d6-9448-7f9bd3f0fc18</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>f523130bc3aeee1049ccbd0ed4013174</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.scheduled_date}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>8e23130bc3aeee1049ccbd0ed40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6045de49-813a-48e8-b2f3-99e8eca01f7a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f523130bc3aeee1049ccbd0ed4013174^sys_idNOT IN3123130bc3aeee1049ccbd0ed40131a9"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a68b3162-db4f-4604-bae7-4aca19b65806</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>users_in_a_department</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Users in a Department</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Notify Department When Training Session Scheduled">f523130bc3aeee1049ccbd0ed4013174</model>
+        <model_id>f523130bc3aeee1049ccbd0ed4013174</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_f523130bc3aeee1049ccbd0ed4013174</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>3123130bc3aeee1049ccbd0ed40131a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f523130bc3aeee1049ccbd0ed4013174</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:16</sys_created_on>
+        <sys_id>3123130bc3aeee1049ccbd0ed4013180</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f523130bc3aeee1049ccbd0ed4013174</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:17</sys_created_on>
+        <sys_id>7523130bc3aeee1049ccbd0ed4013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f523130bc3aeee1049ccbd0ed4013174"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ca564fc3c36eee1049ccbd0ed401312c</sys_id>
+        <latest_snapshot>f523130bc3aeee1049ccbd0ed4013174</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch4-05-14-2025_06-04-2025_1836.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ca564fc3c36eee1049ccbd0ed401312c^sys_idNOT IN0a23130bc3aeee1049ccbd0ed40131c5"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"0a23130bc3aeee1049ccbd0ed40131c5","name":"plan","plan_signature":null}}</plan>
+        <plan_id>ca564fc3c36eee1049ccbd0ed401312c</plan_id>
+        <snapshot>0bfedf87c3eeee1049ccbd0ed40131a8</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 02:31:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0a23130bc3aeee1049ccbd0ed40131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 02:31:18</sys_updated_on>
+        <trigger display_value="">8623130bc3aeee1049ccbd0ed40131c3</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ca564fc3c36eee1049ccbd0ed401312c"/>
+</record_update>

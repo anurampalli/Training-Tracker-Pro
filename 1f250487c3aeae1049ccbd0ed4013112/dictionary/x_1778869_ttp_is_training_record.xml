@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d151cb43c36eee1049ccbd0ed40131a4" extends="sys_import_set_row" label="IS Training Record" max_length="40" name="x_1778869_ttp_is_training_record" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Completion Date" label="Completion Date" max_length="40" name="u_completion_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Feedback" label="Feedback" max_length="40" name="u_feedback" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Training Session" label="Training Session" max_length="40" name="u_training_session" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Attendance Status" label="Attendance Status" max_length="40" name="u_attendance_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Employee (Name)" label="Employee (Name)" max_length="40" name="u_employee__name_" type="string"/>
+        <element attributes="import_attribute_name=Score" label="Score" max_length="40" name="u_score" type="integer"/>
+    </element>
+</database>
