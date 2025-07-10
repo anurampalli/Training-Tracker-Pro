@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard">
+    <par_dashboard action="DELETE">
+        <active>true</active>
+        <certified>false</certified>
+        <description>•	📊 Report 1: Training Completion Rate by Department
+o	Bar chart showing % of employees who attended at least one training in each department.
+•	📊 Report 2: Training Session Attendance Breakdown
+o	Pie chart for each session showing distribution: Attended, Absent, Excused.</description>
+        <experience/>
+        <grid>48</grid>
+        <name>TTP Dashboard</name>
+        <sys_class_name>par_dashboard</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:02:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92b5f307c362225049ccbd0ed401314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TTP Dashboard</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_update_name>par_dashboard_92b5f307c362225049ccbd0ed401314a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:02:19</sys_updated_on>
+        <sys_ux_app_config/>
+        <sys_ux_app_route/>
+        <sys_ux_macroponent/>
+        <sys_ux_screen/>
+        <sys_ux_screen_type/>
+    </par_dashboard>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</application>
+        <file_path/>
+        <instance_id>8a8dfce4db4e31d4199b17291396197d</instance_id>
+        <instance_name>dev190528</instance_name>
+        <name>par_dashboard_92b5f307c362225049ccbd0ed401314a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard"><par_dashboard action="INSERT_OR_UPDATE"><active>true</active><certified>false</certified><description>•	]]>📊<![CDATA[ Report 1: Training Completion Rate by Department
+o	Bar chart showing % of employees who attended at least one training in each department.
+•	]]>📊<![CDATA[ Report 2: Training Session Attendance Breakdown
+o	Pie chart for each session showing distribution: Attended, Absent, Excused.</description><experience/><grid>48</grid><name>TTP Dashboard</name><sys_class_name>par_dashboard</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-10 05:02:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>92b5f307c362225049ccbd0ed401314a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>TTP Dashboard</sys_name><sys_overrides/><sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package><sys_policy/><sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope><sys_update_name>par_dashboard_92b5f307c362225049ccbd0ed401314a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-10 05:02:19</sys_updated_on><sys_ux_app_config/><sys_ux_app_route/><sys_ux_macroponent/><sys_ux_screen/><sys_ux_screen_type/></par_dashboard></record_update>]]></payload>
+        <payload_hash>168405708</payload_hash>
+        <record_name>TTP Dashboard</record_name>
+        <reverted_from/>
+        <source>1b250487c3aeae1049ccbd0ed4013115</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:02:19</sys_created_on>
+        <sys_id>12b5f307c362225049ccbd0ed401314c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197f2b68d690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:02:19</sys_updated_on>
+        <type>PAR Dashboard</type>
+        <update_guid>16b5f3077562225081ff8f680ee6ff4b</update_guid>
+        <update_guid_history>16b5f3077562225081ff8f680ee6ff4b:168405708</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="TTP Dashboard">ffc6b307c362225049ccbd0ed40131d5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-10 05:07:05</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard">par_dashboard</sys_db_object>
+        <sys_id>08b083dcc2274000926739296eb90000</sys_id>
+        <sys_metadata>92b5f307c362225049ccbd0ed401314a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TTP Dashboard</sys_name>
+        <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+        <sys_scope_delete display_value="">bd0636be1b0543d9aa859527f7da07e9</sys_scope_delete>
+        <sys_update_name>par_dashboard_92b5f307c362225049ccbd0ed401314a</sys_update_name>
+        <sys_update_version display_value="par_dashboard_92b5f307c362225049ccbd0ed401314a">12b5f307c362225049ccbd0ed401314c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-10 05:07:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_1778869_ttp_is_training_record" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_row</element>
+            <list_id display_value="x_1778869_ttp_is_training_record" element="NULL" name="x_1778869_ttp_is_training_record" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ed51cb43c36eee1049ccbd0ed40131d6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_id>a551cb43c36eee1049ccbd0ed40131d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_set</element>
+            <list_id display_value="x_1778869_ttp_is_training_record" element="NULL" name="x_1778869_ttp_is_training_record" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ed51cb43c36eee1049ccbd0ed40131d6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_id>a951cb43c36eee1049ccbd0ed40131d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_import_state</element>
+            <list_id display_value="x_1778869_ttp_is_training_record" element="NULL" name="x_1778869_ttp_is_training_record" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ed51cb43c36eee1049ccbd0ed40131d6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_id>ad51cb43c36eee1049ccbd0ed40131d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_table</element>
+            <list_id display_value="x_1778869_ttp_is_training_record" element="NULL" name="x_1778869_ttp_is_training_record" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ed51cb43c36eee1049ccbd0ed40131d6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_id>a151cb43c36eee1049ccbd0ed40131d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_target_sys_id</element>
+            <list_id display_value="x_1778869_ttp_is_training_record" element="NULL" name="x_1778869_ttp_is_training_record" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ed51cb43c36eee1049ccbd0ed40131d6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_id>a551cb43c36eee1049ccbd0ed40131d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_row_error</element>
+            <list_id display_value="x_1778869_ttp_is_training_record" element="NULL" name="x_1778869_ttp_is_training_record" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ed51cb43c36eee1049ccbd0ed40131d6</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_id>a951cb43c36eee1049ccbd0ed40131d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_1778869_ttp_is_training_record</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-10 01:13:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed51cb43c36eee1049ccbd0ed40131d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1778869_ttp_is_training_record</sys_name>
+            <sys_package display_value="Training Tracker Pro" source="x_1778869_ttp">1f250487c3aeae1049ccbd0ed4013112</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Training Tracker Pro">1f250487c3aeae1049ccbd0ed4013112</sys_scope>
+            <sys_update_name>sys_ui_list_x_1778869_ttp_is_training_record_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-10 01:13:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>
