@@ -105,6 +105,8 @@ A dashboard titled **"Training Tracker Dashboard"** includes:
 
 - Creating a scoped application in ServiceNow
 - Defining and referencing custom tables
+- Creating import sets and transform maps
+- Automap fields and mapping assist in transform maps
 - Creating email layout and template
 - Creating email notification
 - Enabling email sending in ServiceNow
